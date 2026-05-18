@@ -4,7 +4,7 @@ pipeline {
     environment {
         SCANNER_HOME    = tool 'sonar-scanner'
         SONAR_SERVER    = 'demo'
-        DOCKER_HUB_USER = 'venkatapavank'
+        DOCKER_HUB_USER = 'kommabhavya'
         IMAGE_NAME      = 'my-app'
         IMAGE_TAG       = "${BUILD_NUMBER}"
     }
@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/pavankattamuri8/poc8-demo.git'
+                    url: 'https://github.com/Bhavyakomma/POC2.git'
             }
         }
  
